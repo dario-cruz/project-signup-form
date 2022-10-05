@@ -16,3 +16,17 @@ div.mainframe {
     "left right right"
     "left right right";
 }
+
+div.leftframe {
+    display: inherit;
+    grid-area: left;
+    background-image: url("imgs/portalimg.jpg");
+    background-size: cover;
+    background-repeat: center;
+    background-position: left;
+}
+
+div.rightframe {
+    display: inherit;
+    grid-area: right;
+}
