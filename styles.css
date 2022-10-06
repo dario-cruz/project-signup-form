@@ -4,6 +4,12 @@
     padding: 0;
     /* border: solid black 2px; */
 }
+:root {
+    --mainframecolor: #5e565a;
+    --secondaryframecolor: #e8e9eb;
+    --fontcolor: #;
+}
+
 
 div.mainframe {
     display: grid;
@@ -18,7 +24,6 @@ div.mainframe {
 }
 
 div.leftframe {
-    display: inherit;
     grid-area: left;
     background-image: url("imgs/portalimg.jpg");
     background-size: cover;
@@ -27,6 +32,7 @@ div.leftframe {
 }
 
 div.rightframe {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: grid;
     grid-area: right;
     height: 100vh;
@@ -42,10 +48,15 @@ input {
     height: 30px;
     width: 300px;
 }
-
+.righttop, .rightbottom {
+    background-color: var(--secondaryframecolor);
+}
 .rightmid {
-    height: 50vh;
+    box-shadow:  5px 10px 8px #888888;
+    z-index: 10;
+    height: 40vh;
     display: grid;
+    background-color: var(--mainframecolor);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 20% 80%;
     grid-template-areas: 
@@ -53,6 +64,9 @@ input {
     "bottom bottom";
 }
 .rightmid form {
+    width: 650px;
+    height: 300px;
+    margin-left: 30px;
     display: inherit;
     grid-area: bottom;
     grid-template-columns: 1fr 1fr;
@@ -63,6 +77,8 @@ input {
     "botl botr";
 }
 .rightmid h1 {
+    margin-top: 20px;
+    margin-left: 30px;
     display: inherit;
     grid-area: top;
 }
