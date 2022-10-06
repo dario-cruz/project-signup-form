@@ -143,6 +143,8 @@ label {
     display: flex;
     font-family: 'Rubik Mono One', sans-serif;
     font-size: x-large;
+    word-spacing: -10px;
+    line-height: 40px;
 }
 .righttop p {
     margin-top: auto;
