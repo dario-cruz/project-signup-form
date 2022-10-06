@@ -40,7 +40,7 @@ div.leftframe {
 }
 
 div.rightframe {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: grid;
     grid-area: right;
     height: 100vh;
