@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: solid black 2px;
+    /* border: solid black 2px; */
 }
 
 div.mainframe {
@@ -27,6 +27,60 @@ div.leftframe {
 }
 
 div.rightframe {
-    display: inherit;
+    display: grid;
     grid-area: right;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+input, label {
+    display: block;
+    /* For placing titles on top */
+}
+input {
+    height: 30px;
+    width: 300px;
+}
+
+.rightmid {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+    "top top"
+    "bottom bottom";
+}
+.rightmid form {
+    display: inherit;
+    grid-area: bottom;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "topl topr"
+    "midl midr"
+    "botl botr";
+}
+.rightmid h1 {
+    display: inherit;
+    grid-area: top;
+}
+.fname {
+    grid-area: topl;
+}
+.lname {
+    grid-area: topr;
+}
+.email {
+    grid-area: midl;
+}
+.phone {
+    grid-area: midr;
+}
+.password {
+    grid-area: botl;
+}
+.confpass {
+    grid-area: botr;
 }
