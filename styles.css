@@ -127,11 +127,18 @@ label {
 .confpass {
     grid-area: botr;
 }
+
+/* Right bottom styling */
+.rightbottom {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .rightbottom p , .rightbottom button{
-    margin-left: 30px;
+    margin-left: 2em;
 }
 .rightbottom button {
-    margin-top: 20px;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 2em;
     height: 40px;
     width: 200px;
     box-shadow: 2px 2px 2px 1px;
@@ -139,6 +146,11 @@ label {
     border: solid 0px;
     background-color: #1F7A8C;
 }
+.rightbottom .acc {
+    margin-top: 1rem;
+}
+
+/* Right Top styling */
 .righttop {
     display: flex;
     font-family: 'Rubik Mono One', sans-serif;
