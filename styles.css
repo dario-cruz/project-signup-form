@@ -10,6 +10,44 @@
     --fontcolor: #;
 }
 
+/* Keyframes */
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  @keyframes fadeInAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+body {
+    animation: fadeInAnim ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 
 div.mainframe {
     display: grid;
@@ -104,7 +142,9 @@ label {
     "botl botr";
 }
 .rightmid h1 {
-    margin-top: 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+    word-spacing: -20px;
+    margin-top: 1em;
     margin-left: 30px;
     display: inherit;
     grid-area: top;
@@ -145,6 +185,7 @@ label {
     border-radius: 5px;
     border: solid 0px;
     background-color: #1F7A8C;
+    animation: wiggle 2s linear infinite;
 }
 .rightbottom .acc {
     margin-top: 1rem;
