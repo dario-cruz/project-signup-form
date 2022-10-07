@@ -19,3 +19,15 @@ passInput.addEventListener('onChange', () => {
 passConf.addEventListener('onChange', () => {
     passValid();
 })
+
+passInput.addEventListener("invalid", () => {
+    if (passInput.value === "") {
+        passInput.setCustomValidity("Enter your password")
+    }
+});
+
+passConf.addEventListener("invalid", () => {
+    if (passConf.value === "") {
+        passConf.setCustomValidity("Enter your password again to confirm.")
+    }
+});
