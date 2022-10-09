@@ -36,7 +36,7 @@
                     </div>
                     <div class="password">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required tabindex="5">
+                        <input type="password" name="password" id="password" required tabindex="5" onkeyup="pCheck()">
                     </div>
                   
                     <div class="lname">
@@ -49,7 +49,8 @@
                     </div>
                     <div class="confpass">
                         <label for="confpass">Confirm Password</label>
-                        <input type="password" name="conf-password" id="conf-password" required tabindex="6">
+                        <input type="password" name="conf-password" id="conf-password" required tabindex="6" onkeyup="pCheck()">
+                        <span id="confmessage"></span>
                     </div>
                 </form>
             </div>
