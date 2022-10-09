@@ -4,45 +4,19 @@ const fName = document.getElementById('fname')
 const lName = document.getElementById('lname')
 const email = document.getElementById('email')
 const passMsg = document.getElementById('confmessage')
+const formButton = document.getElementById('formbtn')
 
 // Check password inputs to confirm matching values.
 const pCheck = () => {
     if (passInput.value === passConf.value) {
         passMsg.style.color = "green"
         passMsg.innerHTML = "Passwords Match!"
+        formButton.setAttribute('form', 'mainform')
     } else {
         passMsg.style.color = "red"
         passMsg.innerHTML = "Passwords need to match."
+        formButton.setAttribute('form', '')
     }
 }
 
 
-
-
-// function passValid() {
-//     if (passConf === passInput) {
-//         passConf.setCustomValidity('');
-//     } else {
-//         passConf.setCustomValidity('Passwords do not match');
-//     }
-// }
-
-// passInput.addEventListener('onChange', () => {
-//     passValid();
-// })
-
-// passConf.addEventListener('onChange', () => {
-//     passValid();
-// })
-
-// passInput.addEventListener("invalid", () => {
-//     if (passInput.value === "") {
-//         passInput.setCustomValidity("Enter your password")
-//     }
-// });
-
-// passConf.addEventListener("invalid", () => {
-//     if (passConf.value === "") {
-//         passConf.setCustomValidity("Enter your password again to confirm.")
-//     }
-// });

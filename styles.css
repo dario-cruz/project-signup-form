@@ -106,6 +106,10 @@ input {
     height: 30px;
     width: 300px;
 }
+input:invalid {
+    outline: 2px solid red;
+    
+}
 label {
     text-transform: uppercase;
 }
